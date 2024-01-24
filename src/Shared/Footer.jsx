@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="footer p-10 bg-base-200 text-base-content">
+    <footer className="footer p-10 bg-base-300 text-base-content">
       <aside>
         <h4 className="text-red-600 text-3xl font-bold border border-b-4 p-4">
           Donate Blood!

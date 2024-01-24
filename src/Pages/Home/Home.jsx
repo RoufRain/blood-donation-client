@@ -1,6 +1,7 @@
 import Footer from "../../Shared/Footer";
 import NavBar from "../../Shared/NavBar";
 import Banner from "./Banner";
+import ContactUs from "./ContactUs";
 import HomeCard from "./HomeCard";
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
       <NavBar> </NavBar>
       <Banner> </Banner>
       <HomeCard> </HomeCard>
+      <ContactUs> </ContactUs>
       <Footer> </Footer>
     </div>
   );
