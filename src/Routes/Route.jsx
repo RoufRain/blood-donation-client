@@ -5,6 +5,11 @@ import Dashboard from "../Dashboard/Dashboard";
 import Blog from "../Pages/Blogs/Blog";
 import Login from "../Pages/Registration/Login";
 import SignUp from "../Pages/Registration/SignUp";
+import AllUsers from "../Dashboard/AllUsers";
+import AllDonationRequest from "../Dashboard/AllDonationRequest";
+import AdminHome from "../Dashboard/AdminHome";
+import AddBlog from "../Dashboard/AddBlog";
+import PrivateRoute from "./PrivateRoute";
 
 export const router = createBrowserRouter([
   {
@@ -31,7 +36,28 @@ export const router = createBrowserRouter([
   },
   {
     path: "dashboard",
-    element: <Dashboard> </Dashboard>,
-    children: [{}],
+    element: (
+      <PrivateRoute>
+        <Dashboard> </Dashboard>
+      </PrivateRoute>
+    ),
+    children: [
+      {
+        path: "allusers",
+        element: <AllUsers> </AllUsers>,
+      },
+      {
+        path: "alldonationrequest",
+        element: <AllDonationRequest> </AllDonationRequest>,
+      },
+      {
+        path: "adminhome",
+        element: <AdminHome> </AdminHome>,
+      },
+      {
+        path: "addblog",
+        element: <AddBlog> </AddBlog>,
+      },
+    ],
   },
 ]);

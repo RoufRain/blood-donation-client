@@ -26,7 +26,7 @@ const NavBar = () => {
         <Link to="/signup">Registration</Link>
       </li>
       <li>
-        <Link to="">Dashboard</Link>
+        <Link to="/dashboard">Dashboard</Link>
       </li>
     </>
   );
