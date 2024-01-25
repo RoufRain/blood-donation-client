@@ -37,7 +37,7 @@ const Login = () => {
           <h1 className="text-3xl text-center mt-4 font-bold">Login now!</h1>
 
           <form onSubmit={signInHandle} className="card-body">
-            <div className="form-control">
+            <div className="form-control w-24">
               <label className="label">
                 <span className="label-text">Email</span>
               </label>
@@ -45,7 +45,7 @@ const Login = () => {
                 type="email"
                 name="email"
                 placeholder="email"
-                className="input input-bordered"
+                className="input input-bordered w-24"
                 required
               />
             </div>

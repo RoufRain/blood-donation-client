@@ -17,13 +17,13 @@ const NavBar = () => {
       </li>
 
       <li>
-        <Link to="">Donation Request</Link>
+        <Link to="/donationrequest">Donation Request</Link>
       </li>
       <li>
         <Link to="/blog">Blog</Link>
       </li>
       <li>
-        <Link to="/signup">Registration</Link>
+        <Link to="/registration">Registration</Link>
       </li>
       <li>
         <Link to="/dashboard">Dashboard</Link>

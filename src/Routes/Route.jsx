@@ -10,6 +10,8 @@ import AllDonationRequest from "../Dashboard/AllDonationRequest";
 import AdminHome from "../Dashboard/AdminHome";
 import AddBlog from "../Dashboard/AddBlog";
 import PrivateRoute from "./PrivateRoute";
+import DonationRequest from "../Pages/DonationRequest/DonationRequest";
+import Registration from "../Pages/Home/Registration";
 
 export const router = createBrowserRouter([
   {
@@ -23,6 +25,14 @@ export const router = createBrowserRouter([
       {
         path: "/blog",
         element: <Blog> </Blog>,
+      },
+      {
+        path: "/donationrequest",
+        element: <DonationRequest> </DonationRequest>,
+      },
+      {
+        path: "/registration",
+        element: <Registration> </Registration>,
       },
       {
         path: "/login",
