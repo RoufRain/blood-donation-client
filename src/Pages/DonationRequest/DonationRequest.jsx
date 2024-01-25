@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import DonationRequestCard from "./DonationRequestCard";
 
 const DonationRequest = () => {
   const [requests, setRequests] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5003/donationRequest")
+    fetch(
+      "https://blood-donation-server-nrfny8w85-roufs-projects.vercel.app/donationRequest"
+    )
       .then((res) => res.json())
       .then((data) => setRequests(data));
   }, []);
